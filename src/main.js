@@ -75,7 +75,7 @@ function searchImages(images) {
         orientation: "horizontal",
     safesearch: true,
     })
-    showLoader();
+    
             return fetch(`${BASE_URL}?${urlParams}`).then((res) => {
         if (!res.ok) {
             throw new Error(res.status)
